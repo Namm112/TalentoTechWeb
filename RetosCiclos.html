@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+</body>
+<script>
+        
+    
+    /* Reto #1 - Suma hasta cincuenta
+    Crea una variable que se llame total,
+    después pide a tu usuario que ingrese un número y lo sume al valor de total. Haz que esto se repita hasta que el valor de total sea mayor a 50 y muestra el resultado en pantalla.
+    */
+    // var total = 0
+    // var num = 0
+
+    // while ( total <= 50 )    
+    // {
+    //     var num = parseFloat(prompt("Ingrese un número, serán sumados hasta superar el total de 50"))
+    //     total = total + num
+    //     document.write(" El número sumado fue "+ total+ "<br>")
+    // }
+
+    // document.write( "La suma de los números es mayor a 50, el total es de: " + total + "<br>")
+
+
+    // /* Reto #2 Más allá del cuarenta y dos
+    // Crea un código que pida al usuario un número y se repita hasta que el usuario
+    // coloque un número mayor a 42.
+    // Cuando se cumpla esta condición muestra el resultado en pantalla indicando esto al usuario y finaliza el ciclo.
+    // */
+
+    // var num2 = 0
+
+    // while ( num2 <= 42)
+    // {
+    //     num2 = parseFloat(prompt("Ingresa número hasta elegir uno superior a 42"))
+    //     document.write( "El número elegido es " + num2 + "<br>")
+    // }
+
+    // document.write( "El número elegido es " + num2 + " , por lo tanto supera al número 42"+"<br>" )
+
+
+
+    // /* Reto #3 Sumas consecutivas
+    // Pide al usuario que ingrese dos números y los sume.
+    // Después pregunta si quiere añadir otro número: si la respuesta es afirmativa añádelo al total;
+    // en caso contrario finaliza el ciclo y muestra el resultado total en pantalla. 
+    // */
+
+    // var num3 = 0
+    // var num4 = 0
+    // var num5 = 0
+    // var suma = 0
+    // var nuevaSUma = 0
+
+    // num3 = parseFloat(prompt("Se sumarán números, ingrese un número"))
+    // num4 = parseFloat(prompt("Se sumarán números, ingrese otro número"))
+    // suma = num3 + num4
+      
+    // respuesta = prompt("¿Desea sumar otro número?")           
+
+    // while ( respuesta == "Sí" )
+    // {      
+    //     num5 = parseFloat(prompt("Se sumará el número, ingreselo"))
+    //     suma = suma + num5
+    //     respuesta = prompt("¿Desea sumar otro número?")
+    // } 
+
+    // document.write("La suma de los números ingresados es de: " + suma)
+
+    // /* Reto #4 Lista de invitados
+    // Estás organizando un banquete al que quieres invitar a tus amigos. Crea un programa que pida el nombre de uno de tus amigos,
+    // al hacerlo aumenta en uno una variable contadora,
+    // después pregunta si quieres invitar a alguien más:
+    // si la respuesta es afirmativa entonces pregunta por una persona más;
+    // en caso contrario cierra el ciclo y muestra en pantalla cuantos invitados son.
+    // */
+
+    // var nombre = ""
+    // var contador = 1
+    // var invitado = prompt("Ingrese el nombre de un invitado")
+    // var resp = prompt("Desea añadir otro invitado")
+    // document.write("Invitado Nro "+ contador +":  "+invitado+"<br>")
+
+    // while (resp == "Sí")
+    // {        
+    //     invitado = prompt("Ingrese el nombre de un invitado")
+    //     contador++
+    //     document.write("Invitado Nro "+ contador +": "+invitado+"<br>")
+    //     resp = prompt("Desea añadir otro invitado")
+    // }
+
+    // /* Reto #5 "Un elefante se balanceaba..."
+    // Escribe un programa que inicie mostrando en pantalla la letra de "Un elefante se balanceaba" iniciando con el número 1,
+    // después pregunta al usuario cuantos elefantes más se balancearán y debe responder un número más al mostrado.
+    // En caso de ingresar un número diferente pedirle que intente de nuevo y repetir el ciclo hasta tener 10 elefantes. Tomar en cuenta cuando el texto muestra un solo elefante y varios elefantes. 
+    // */
+
+    // var texto = "se balanceaba sobre la tela de una araña, como veia que resistia llamaron otro elefante "
+    // var elefantes = parseInt(prompt("Ingrese los elefantes"))
+    // var contador = 1
+    // var textoElefante = "Elefante"
+    
+    // while(contador <= elefantes)
+    // {
+    //     if (contador != 1)
+    //     {
+    //         textiElefante = "Elefantes"
+    //     } 
+
+    //     document.write(contador+""+textoElefante+""+texto+"<br>")
+    //     contador++
+    // }
+
+    // documentt.write(contador+""+textoElefante+"" + texto + "<br>")
+
+    // Cronometro 
+
+    // var cronometro = 10 
+    // while (cronometro>0)
+    // {
+    //     document.write("Tick Tock"+cronometro+"<br>")
+    //     cronometro--
+    // }
+
+    // document.write("BOOM!")
+  
+    // Cuenta regresiva de despegue de nave
+
+    var cuentaRegresiva = 15
+    document.write("Despegue en "+"<br>")
+
+    while (cuentaRegresiva != 0 )
+    {   
+        document.write(cuentaRegresiva + "<br>")
+        cuentaRegresiva-- 
+
+        if (cuentaRegresiva == 10 )
+        {
+            document.write("Encendiendo motores"+"<br>")    
+        }
+        
+    }
+
+    //Factorial de un número 
+
+    
+
+
+
+
+
+
+
+</script>
+</html>
+ 

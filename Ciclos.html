@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    // Algoritmo que imprime números del 1 al 10 
+
+    // var contador=1
+
+    // while(contador<=100)
+    // {
+    //     document.write( contador + "<br>")        
+    //     contador++
+    
+       
+    // }
+
+    // document.write("Terminé")
+
+
+    // Personal: imprimir pares hasta 100 
+    // var contador= 1
+    // var resultado = 0
+
+    // while(resultado <= 100)
+    // {
+    //     document.write(resultado + "<br>")
+    //     contador++
+    //     resultado = 2*contador
+      
+    // }
+
+    //Algorito que finaliza cuando se ingresa palabra correcta
+
+    // var palabra = ""
+    // while( palabra != "PARAR")
+    // {
+    //     palabra = prompt("ingresa la palabra :")
+    //     document.write(palabra+"<br>")
+    // }
+
+    // // Ingresar número y lo suma con los anteriores hasta que el total de la suma sea igual o mayor a 20
+
+    // var suma = 0
+
+    // while(suma <= 20)
+    // {
+    //     var numero = parseInt(prompt("Ingrese el número: "))
+    //     document.write(numero+"<br>")
+    //     suma = suma+numero
+    // }
+
+    
+    // Algortimo que solicita número y lo sume olo si es par 
+    // // Dejara de sumar números cuando se ingrese el "0"
+
+    // var par = 0
+    // var suma= 0
+    // var num = 1
+
+    // while( num != 0)
+    // {
+    //     num = parseFloat(prompt("Ingrese el número"))
+    //     par = num%2
+    //     document.write("El número ingresado fue:"+num+"<br>")
+
+    //     if ( par == 0 )
+    //     {            
+    //         suma = suma + num
+    //     }
+    // }
+
+    // document.write("La suma total de los números pares fue de" + suma +"<br>")
+
+    // Alternativa 
+
+    var sum = 0
+    var numero 
+
+    while(numero!=0)
+    {
+        numero = parseFloat(prompt("Ingrese el número"))
+        document.write("El número ingresado fue:"+numero+"<br>")
+        
+        if(numero%2 == 0)
+        {
+            suma = suma+numero
+        }
+    }
+    document.write("La suma total de los números pares fue de" + suma +"<br>")
+
+    // Adivinar número oculto
+
+    var numero = 0
+
+    while(numero!=17)
+    {
+        numero = parseFloat(prompt("Adivina el número"))
+       
+    }
+    document.write("Felicidades, el número era" + numero)        
+        
+
+
+</script>
+
+</html>

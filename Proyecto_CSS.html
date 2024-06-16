@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+
+        .announcement {
+            text-align: center;
+            background-color: #ffebcc;
+            padding: 20px;
+            border: 2px solid #ff9900;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            background-color: #ffcc66;
+            color: #b35900;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            background-color: #ffcc99;
+            color: #804000;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #ff8000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #cc6600;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="announcement">
+        <h1>¡Gran Oferta!</h1>
+        <h2>No te pierdas nuestras promociones</h2>
+        <button onclick="alert('¡Oferta activada!')">Aprovechar ahora</button>
+    </div>
+</body>
+</html>

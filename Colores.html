@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="color1 bordes">
+        Elemento 1
+    </div>
+
+    <div class="color2 bordes margenes padding"><i class="fa-solid fa-eye"></i>
+        Elemento 2
+        <i class="fa-solid fa-eye"></i>
+    </div>
+
+    <div class="alineacion-texto">
+        <h1 class="text-shadow"><i class="fa-solid fa-shield-halved"></i>La Serenidad del Amanecer</h1>
+        <p>
+             El primer rayo de sol se desliza tímidamente sobre el horizonte, pintando el cielo con suaves tonos de rosa y naranja. Las aves comienzan su canto matutino, llenando el aire con una melodía dulce y tranquila. La bruma de la madrugada se disipa lentamente, revelando un paisaje que despierta con calma. En este momento de transición, todo parece posible; es un recordatorio de que cada día trae consigo una nueva oportunidad para empezar de nuevo y encontrar belleza en las cosas más simples.
+        </p>
+    </div>
+
+    <div>
+        <button> medico <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <br>
+    <a href="https://campus.talentotechbogota.co/" class="enlace" target="_blank">TalentoTech</a>
+
+    <div>
+        <h1> Lista </h1>
+        <ul>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Carne</li>
+            <Li>Pescado</Li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Tabla</h1>
+        <table id="estilo-tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Correo</th>
+            </tr>
+
+            <tr>
+                <td>Juan</td>
+                <td>Cali</td>
+                <td>juan@correo.com</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Cúcutá</td>
+                <td>luis@correo.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1>Posicionamiento</h1>
+        <div class="relative">
+            Relativo
+            <div class="absolute">
+                Absoluto
+                <div class="fixed">
+                    Fijado
+               <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, alias, praesentium quae placeat cumque sunt minus veritatis sequi in, accusantium itaque maiores soluta qui blanditiis laudantium ipsam ex dolore at!
+               </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Float</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, dolorem amet. Totam incidunt similique quos ratione itaque quae fuga mollitia dolores, expedita minus eius dolore, maiores placeat debitis exercitationem? Illo.
+            <img class="float" src="https://i.pinimg.com/564x/16/0d/05/160d052654397e5510cdb64b4f54a2ef.jpg">
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h1>Imagenes</h1>
+        <img class="imagen1" src="https://img.freepik.com/free-vector/group-people-illustration-collection_52683-33805.jpg" alt="">
+        <img class="imagen2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Ah-yZIOKaUFd-y7-NqJc6odTrWF-f6O0vQ&s" alt="">
+        <img class="imagen3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy0KOMr7w2a47gmGC8p2SqUDxvfuZO2VpclQ&s" alt="">
+    </div>
+
+    <div class="transition">
+        <h1>Transiciones</h1>
+    </div>
+
+    <div class="animation">
+        <h1>Animaciones</h1>
+    </div>
+
+    <form action="">
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Nombre">
+        <label for="">Descripcion</label>
+        <textarea name="" id=""></textarea>
+        <label for="">País</label>
+        <select name="" id="">
+            <option value="">Colombia</option>
+            <option value="">Canada</option>
+            <option value="">Chile</option>        
+            <button>enviar</button>
+        </select>
+        <button>Enviar</button>
+    </form>
+
+    <h1>Grid</h1>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+</body>
+
+<style>
+    .color1
+    {
+        background-color:chartreuse ;
+        color: rgb(100, 0, 109);
+        border: solid;
+        border-color: rgb(240, 128, 128);
+        opacity: 0.5;
+    }
+
+    .color2
+    {
+        width: 83%;
+        height: 350px;
+        background-image: url(https://i.pinimg.com/564x/65/09/ef/6509ef5d7fd541cdb89a390a8642f730.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: scroll;
+    }
+
+    .bordes
+    {
+        border-style: solid dotted solid dotted; 
+        border-color: rgb(4, 88, 88);
+        border-width: 7px;
+        border-radius: 800px; 
+    }
+
+    .margenes
+    {
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .padding
+    {
+        padding-top: 50px;
+        padding-left: 80px;
+        padding-right: 50px;
+    }
+
+    .alineacion-texto
+    {
+        text-align: center;
+        text-decoration-line: overline;
+        text-decoration-color: blueviolet;
+        text-decoration-style: dotted;
+
+        text-transform: capitalize;
+        text-indent: 5px;
+        letter-spacing: 2px;
+        line-height: 30px;
+        word-spacing: 2px;
+        
+        font-weight: bold;
+    }
+
+    .text-shadow
+    {
+        color:rgb(4, 88, 88);
+        text-shadow: 2px 2px 5px rgb(98, 0, 255);
+        font-family: Verdana;
+        font-style: oblique;
+        font-size: 30px;
+    }
+
+    .enlace
+    {
+        text-decoration: none;
+        background-color: cadetblue;
+        padding: 5px;
+        border-radius: 5px;
+        border-color: blueviolet;
+        border-style: solid;
+        display: inline-block;
+        text-align: center;
+        cursor: progress;
+    }
+
+    .enlace:hover
+    {
+        color: rgb(95, 0, 0);
+        text-decoration: none;
+        background-color: chartreuse;
+
+    }
+
+    .enlace:active
+    {
+        color: rgb(255, 153, 0);
+    }
+
+    ul>li
+    {
+        list-style-type: square;
+        background-color: rgb(251, 127, 255);
+        display: inline;
+        visibility: hidden;
+
+    }
+
+    ul
+    {
+        background-color: aquamarine;
+        opacity: 1;
+        padding: 20px;
+
+    }
+
+    table#estilo-tabla 
+    {
+        border: 1px solid;
+        width: 60%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    
+    th, td 
+    {
+        border: 1px solid;
+        padding: 10px;
+        border-color:rgb(42, 69, 165)
+    }
+
+
+    table#estilo-tabla  tr:nth-child(even){
+        background-color: rgb(124, 194, 255);
+    }
+
+    table#estilo-tabla  tr:hover{
+        background-color: blueviolet;
+    }
+
+    table#estilo-tabla th{
+        background-color: rgb(60, 0, 67);
+        color: aliceblue;
+    }
+
+    .relative
+    {
+        border: 3px solid rgb(255, 153, 0);
+        width: 400px;
+        height: 200px;
+        position: relative;
+        
+    }
+
+    .absolute
+    {
+        border: 3px solid rgb(0, 255, 110);
+        width: 200px;
+        height: 100px;
+        right:0;
+        top: 80px;
+        position: absolute;
+
+        text-align: center;    
+    }
+
+    .fixed
+    {
+        border: 3px solid blue;
+        width: 100px;
+        height: 50px;
+        left: 0;
+        top: 200px;
+        position: fixed;
+        background-color: aquamarine;
+
+        /* desbordado */
+        overflow: auto;
+    }
+
+    .float
+    {
+        width: 100px;
+        height: 150px;
+        float: left;
+    }
+
+    h1::first-letter
+    {
+        color: rgb(67, 0, 100);
+        background-color: rgb(0, 112, 127);
+        font-size: 50px;
+    }
+
+    .imagen1 
+    {
+        width: 30%;
+        border-radius: 50px;
+        border: 1px solid green;
+        padding: 10px;
+        margin: 5px;
+        outline-color:tan ;
+        outline-style: solid;   
+    }
+
+    .imagen2
+    {
+        width: 15%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        box-shadow: 5px 1px 20px red;
+    }
+
+    .imagen3
+    {
+        width: 60%;
+        display: block;
+        margin-top: 50px;
+
+        filter: blur(4px);
+        filter: brightness(250%);
+        filter: contrast(180%);
+        filter: grayscale(80%);
+        filter: hue-rotate(189deg);
+        filter: invert(60%);
+        filter: saturate(6);
+        filter: sepia(50%);
+        filter: opacity(50%);
+    }
+
+    .imagen3:hover
+    {
+        width: 50%;
+        transition: width 2s, height 4s;
+    }
+
+    .transition
+    {
+        background-color: aquamarine;
+        width: 20%;
+        height: 50px;
+        transition: width 2s, transform 2s;
+        transition-timing-function: linear;
+        transition-timing-function: ease;
+        transition-timing-function: ease-in;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+    }
+
+.transition:hover
+{
+    width: 30%;
+    transform: scale(0.5) translate(-100%,-100%);
+    transform: translate(120px, 50%);
+    transform: rotate(90deg);
+}
+
+.animation
+{
+    width: 30%;
+    height: 50px;
+    background-color: blueviolet;
+    position: relative;
+    /* animation-name: Ejemplo; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Ejemplo 
+    {
+    0%{border-radius: 5px; background-color: brown; left: 0; top: 0}
+    25%{border-radius: 20px; background-color: cadetblue; left: 200px; top: 0}
+    50%{border-radius: 50px; background-color: yellowgreen;left: 200px; top: 200px}
+    75%{border-radius: 20px; background-color: tomato;left: 0;top: 200px}
+    100%{border-radius: 5px; background-color: blueviolet;left: 0;top: 0}
+    }
+
+    input, textarea, select 
+    {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 8px;
+        display: inline-block;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    button
+    {
+        border-radius: 5px;
+        background-color: chocolate;
+        padding: 10px 20px;
+        width: 100%;
+        margin: 8px;
+        cursor: pointer;
+    }
+
+    button:hover
+    {
+        background-color: tomato;
+    }
+
+    label
+    {
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 5px;
+        font-weight: bold;
+    }
+
+    .grid
+    {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: rgb(0, 141, 138);
+        padding: 10px;
+    }
+
+    /* MedaQueries para diseño responsive */
+    .grid > div
+    {
+        background-color: rgb(225, 255, 76);
+        text-align: center;
+        padding: 20px;
+        font-size: 30 px;
+    }
+
+    @media screen and (max-width: 600px){
+        button {
+            width: 200px;
+            background-color: chocolate;
+        }
+    }
+
+    @media screen and (min-width: 600px){
+        button {
+            width: 50%;
+            background-color: aquamarine;
+        }
+    }
+        
+    
+    
+
+
+</style>
+</html>

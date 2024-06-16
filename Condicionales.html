@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    // var nota = parseFloat(prompt("Ingrese una nota"))
+
+    // if( nota >= 3)
+    // {
+    //     document.write("Aprobado"+"<br>")
+    // }
+    // else
+    // {
+    //     document.write("No Aprobado"+"<br>")
+    // }
+
+    // // si temperatura mayor a 20 imprimir "Esta haciendo calor"
+    // // Si no imprimir " Esta haciendo frio"
+    // // si es igual a 18 "El clima esta perfecto"
+
+    // var temp = parseFloat(prompt("Grados actuales"))
+
+    // if (temp>20)
+    // {
+    //     document.write("Esta haciendo calor"+"<br>")
+    // }
+    // else if (temp==18)
+    // {
+    //     document.write("El clima esta perfecto"+"<br>")
+    // }
+    // else 
+    // {
+    //     document.write( "Esta haciendo frio"+"<br>")
+    // }
+    
+    // // Solo se puede sembrar en verano u otoño
+
+    // var estacion = prompt("Ingrese una estación")
+
+    // if (estacion == "verano" || estacion == "otoño")
+    // {
+    //     document.write("Si es tiempo de sembrar"+"<br>")
+    // }
+    // else 
+    // {
+    //     document.write("No es tiempo de sembrar"+"<br>")
+    // }
+    
+    // // Alternativa 
+
+    // var estacion2 = prompt("Ingrese la estación del año")
+    // var mensaje = ""
+
+    // if (estacion2 == "verano" || estacion2 == "otoño")
+    // {
+    //     mensaje= "Si es tiempo de sembrar"+"<br>"
+    // }
+    // else 
+    // {
+    //     mensaje= "No es tiempo de sembrar"+"<br>"
+    // }
+    // document.write(mensaje+"<br>")
+
+    // //Calculadora de 2 números
+   
+    // var operacionValida = true;
+    // var operacion = ""
+    // var resultado = 0
+
+    // var operacion = prompt("Ingrese el nombre de la operación a realizar en letras minúsculas")
+    // var num1 = parseFloat(prompt("Ingrese el primer número"))
+    // var num2 = parseFloat(prompt("Ingrese el segundo número"))
+
+    // if (operacion=="suma")
+    // {
+    //     resultado = num1+num2
+    // }
+    // else if (operacion=="resta")
+    // {
+    //     resultado = num1-num2
+    // }
+    // else if (operacion=="multiplicación")
+    // {
+    //     resultado = num1*num2
+    // }
+    // else if (operacion=="división")
+    // {
+    //     resultado = num1/num2
+    // }
+    // else 
+    // {
+    //     document.write("La operación no ha sido encontrada, verifique su ortografía"+"<br>")
+    //     operacionValida = false;
+    // }
+
+    // if (operacionValida==true)
+    // {
+    // document.write(" El resultado de la " + operacion + " entre los números " + num1 + " y "+ num2 + " da como resultado: " + resultado)
+    // }
+
+    // // Algoritmo de nota 
+    // // Menor a 3 imprimir "I"
+    // // Mayor o igual a 3 y menor que 4 imprimir "A"
+    // // Mayor o igual a 4 y menor que 5 imprimir "S"
+    // // Igual a 5 imprimir "E"
+    // // // Ingresar notas entre 0 y 5 
+
+    // var resultado = ""
+    // var nota = parseFloat(prompt("Ingresa la nota de 1 a 5"))
+    
+    // if (nota < 3)
+    // {
+    //     resultado="I"
+    // }
+    // else if (nota <=3 && nota <4 )
+    // {
+    //     resultado="A"
+    // }
+    // else if (nota >= 4 && nota < 5)
+    // {
+    //     resultado="S"
+    // } 
+    // else if ( nota == 5)
+    // {
+    //     resultado="E"
+    // }
+    // else 
+    // {
+    //     document.write("Ha ingresado una nota no disponible"+"<br>")
+    //     resultado = "error - intentelo de nuevo"
+    // }
+
+    // document.write(" Su calificación es: " + resultado + "<br>")
+
+    // Dado el número de un mes, indicar su nombre
+    var nombreMes = "";
+var numeroMes = parseInt(prompt("Ingrese el número del mes"));
+
+switch (numeroMes) {
+    case 1:
+        nombreMes = "Enero";
+        break;
+    case 2:
+        nombreMes = "Febrero";
+        break;
+    case 3:
+        nombreMes = "Marzo";
+        break;
+    case 4:
+        nombreMes = "Abril";
+        break;
+    case 5:
+        nombreMes = "Mayo";
+        break;
+    case 6:
+        nombreMes = "Junio";
+        break;
+    case 7:
+        nombreMes = "Julio";
+        break;
+    case 8:
+        nombreMes = "Agosto";
+        break;
+    case 9:
+        nombreMes = "Septiembre";
+        break;
+    case 10:
+        nombreMes = "Octubre";
+        break;
+    case 11:
+        nombreMes = "Noviembre";
+        break;
+    case 12:
+        nombreMes = "Diciembre";
+        break;
+    default:
+        document.write("Número de mes no válido");
+        break;
+}
+
+if (nombreMes !== "") {
+    document.write("El nombre del mes es: " + nombreMes);
+}
+
+</script>
+</html>

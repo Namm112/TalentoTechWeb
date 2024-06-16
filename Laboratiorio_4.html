@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNAD</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            color: #003366;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .modo-oscuro {
+            background-color: #1c1c1c;
+            color: #f0f4f8;
+        }
+        .contenido {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 150px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .modo-oscuro .contenido {
+            background-color: #333333;
+            color: #f0f4f8;
+        }
+        .imagen-logo {
+            width: 300px;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+        }
+        .titulo {
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+            color: #003366;
+        }
+        .modo-oscuro .titulo {
+            color: #ffcc00;
+        }
+        .subtitulo {
+            text-align: center;
+            color: #ff6600;
+        }
+        .modo-oscuro .subtitulo {
+            color: #ffcc00;
+        }
+        .parrafo {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .lista-ol, .lista-ul {
+            margin: 20px 0;
+            padding: 0 20px;
+            color: #003366;
+        }
+        .modo-oscuro .lista-ol, .modo-oscuro .lista-ul {
+            color: #f0f4f8;
+        }
+        .lista-ol li, .lista-ul li {
+            margin: 5px 0;
+        }
+        .video {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .enlace {
+            color: #003366;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .modo-oscuro .enlace {
+            color: #ffcc00;
+        }
+        .enlace:hover {
+            text-decoration: underline;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .modo-oscuro .formulario {
+            background-color: #444444;
+            border-color: #666666;
+        }
+        .formulario fieldset {
+            border: 1px solid #003366;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .modo-oscuro .formulario fieldset {
+            border-color: #ffcc00;
+        }
+        .formulario legend {
+            font-weight: bold;
+            color: #003366;
+        }
+        .modo-oscuro .formulario legend {
+            color: #ffcc00;
+        }
+        .formulario label {
+            margin: 10px 0;
+            color: #003366;
+        }
+        .modo-oscuro .formulario label {
+            color: #ffcc00;
+        }
+        .formulario input, .formulario textarea {
+            width: 97%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .modo-oscuro .formulario input, .modo-oscuro .formulario textarea {
+            background-color: #666666;
+            color: #f0f4f8;
+            border-color: #888888;
+        }
+        .formulario select {
+            width: 99.7%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .modo-oscuro .formulario select {
+            background-color: #666666;
+            color: #f0f4f8;
+            border-color: #888888;
+        }
+        .formulario button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .formulario button:hover {
+            background-color: #e65c00;
+        }
+        .tabla-ventas {
+            background-color: #f2f2f2;
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .modo-oscuro .tabla-ventas {
+            background-color: #444444;
+        }
+        .tabla-ventas th, .tabla-ventas td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .modo-oscuro .tabla-ventas th, .modo-oscuro .tabla-ventas td {
+            border-color: #666666;
+        }
+        .tabla-ventas th {
+            background-color: #003366;
+            color: white;
+        }
+        .modo-oscuro .tabla-ventas th {
+            background-color: #ffcc00;
+            color: #1c1c1c;
+        }
+        .tabla-ventas tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .modo-oscuro .tabla-ventas tr:nth-child(even) {
+            background-color: #555555;
+        }
+        .tabla-ventas tr:hover {
+            background-color: #ffcc00;
+        }
+        .modo-oscuro .tabla-ventas tr:hover {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenido">
+        <button onclick="toggleModoOscuro()">Modo Oscuro</button>
+        <img class="imagen-logo" src="https://www.unad.edu.co/images/footer/logo-unad-acreditacion-min.png" alt="Logo UNAD">
+        <h1 class="titulo">Universidad Nacional Abierta y a Distancia - UNAD</h1>
+        <hr>
+        <p class="parrafo">La UNAD es una universidad colombiana fundada en 1981 que ofrece programas académicos a distancia. Especializada en educación 
+            virtual, permite estudiar de manera flexible y autónoma a través de una plataforma en línea.</p>
+        <h3 class="subtitulo">Servicios Disponibles</h3>
+        <ol class="lista-ol">
+            <li>Plataforma de Estudio en Línea</li>
+            <li>Tutoría y Acompañamiento Académico</li>
+            <li>Recursos Educativos Digitales</li>
+            <li>Biblioteca Virtual</li>
+            <li>Planes de Estudio Flexibles</li>
+        </ol>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/382Zu1DxY5s?si=CO0Z5EeacSvzzoyQ" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h3 class="subtitulo">Datos de Contacto</h3>
+        <ul class="lista-ul">
+            <li>Contáctanos: 601-3443700</li>
+            <dd>ext. 2728, 2755, 2748, 2702, 2733, 2731, 2773</dd>
+        </ul>
+        <a class="enlace" href="https://rca.unad.edu.co/fus/" target="_blank">Ir a fus digital</a>  
+        <h2 class="titulo">Formulario de Inscripción</h2>
+        
+        <form class="formulario" method="post" onsubmit="mostrarAlerta(event)">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escriba su nombre" required name="nombre">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" required max="2024-05-02" min="1900-01-01" value="2024-05-02" name="fecha_nacimiento">
+                <label for="cedula">Cédula:</label>
+                <input type="number" id="cedula" placeholder="Escriba su cédula" required name="cedula">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" placeholder="Escriba su ciudad" required name="ciudad">
+                <label for="direccion">Dirección:</label>
+                <textarea id="direccion" placeholder="Escriba su dirección" required name="direccion"></textarea>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="Escriba su teléfono" required name="telefono">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="Escriba su correo electrónico" required name="email">
+            </fieldset>
+            <fieldset>
+                <legend>Seleccione el tipo de solicitud</legend>
+                <input type="radio" id="petición" name="PQR" value="P" required>
+                <label for="petición">Petición</label>
+                <input type="radio" id="queja" name="PQR" value="Q" required>
+                <label for="queja">Queja</label>
+                <input type="radio" id="reclamo" name="PQR" value="R" required>
+                <label for="reclamo">Reclamo</label>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+        <h2 class="titulo">Tabla de Ventas</h2>
+        <table class="tabla-ventas">
+            <tr>
+                <th>Mes</th>
+                <th>Ventas (COP)</th>
+            </tr>
+            <tr>
+                <td>Enero</td>
+                <td>$10.000.000</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>$32.000.000</td>
+            </tr>
+            <tr>
+                <td>Marzo</td>
+                <td>$26.000.000</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>$45.000.000</td>
+            </tr>
+            <tr>
+                <td>Mayo</td>
+                <td>$5.000.000</td>
+            </tr>
+            <tr>
+                <td>Junio</td>
+                <td>$50.000.000</td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>$22.000.000</td>
+            </tr>
+            <tr>
+                <td>Agosto</td>
+                <td>$15.000.000</td>
+            </tr>
+            <tr>
+                <td>Septiembre</td>
+                <td>$9.000.000</td>
+            </tr>
+            <tr>
+                <td>Octubre</td>
+                <td>$55.000.000</td>
+            </tr>
+            <tr>
+                <td>Noviembre</td>
+                <td>$100.000.000</td>
+            </tr>
+            <tr>
+                <td>Diciembre</td>
+                <td>$250.000.000</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // Función para mostrar alerta con los campos del formulario
+        function mostrarAlerta(event) {
+            event.preventDefault();
+            let nombre = document.getElementById('nombre').value;
+            let fechaNacimiento = document.getElementById('fecha_nacimiento').value;
+            let cedula = document.getElementById('cedula').value;
+            let ciudad = document.getElementById('ciudad').value;
+            let direccion = document.getElementById('direccion').value;
+            let telefono = document.getElementById('telefono').value;
+            let email = document.getElementById('email').value;
+            let pqr = document.querySelector('input[name="PQR"]:checked').value;
+
+            alert(`Nombre: ${nombre}\nFecha de nacimiento: ${fechaNacimiento}\nCédula: ${cedula}\nCiudad: ${ciudad}\nDirección: ${direccion}\nTeléfono: ${telefono}\nEmail: ${email}\nTipo de PQR: ${pqr}`);
+        }
+
+        // Función para cambiar entre modo claro y oscuro
+        function toggleModoOscuro() {
+            document.body.classList.toggle('modo-oscuro');
+        }
+    </script>
+</body>
+</html>

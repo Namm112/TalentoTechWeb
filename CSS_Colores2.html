@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        .color1 {
+            background-color: #7fff00;
+            color: #64006d;
+            border: solid 2px #f08080;
+            opacity: 0.8;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .color2 {
+            width: 80%;
+            height: 300px;
+            background-image: url(https://i.pinimg.com/564x/65/09/ef/6509ef5d7fd541cdb89a390a8642f730.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 20px auto;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .bordes {
+            border: solid 4px #045858;
+            border-radius: 20px;
+        }
+
+        .margenes {
+            margin: 30px;
+        }
+
+        .padding {
+            padding: 20px;
+        }
+
+        .alineacion-texto {
+            text-align: center;
+            text-decoration-line: overline;
+            text-decoration-color: blueviolet;
+            text-decoration-style: dotted;
+            text-transform: capitalize;
+            text-indent: 5px;
+            letter-spacing: 1px;
+            line-height: 1.6;
+            word-spacing: 2px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        .text-shadow {
+            color: #045858;
+            text-shadow: 2px 2px 5px #6200ff;
+            font-family: 'Verdana', sans-serif;
+            font-style: oblique;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .enlace {
+            text-decoration: none;
+            background-color: cadetblue;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: solid 2px blueviolet;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .enlace:hover {
+            color: #5f0000;
+            background-color: chartreuse;
+        }
+
+        .enlace:active {
+            color: #ff9900;
+        }
+
+        ul {
+            background-color: aquamarine;
+            opacity: 1;
+            padding: 20px;
+            list-style-type: none;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        ul>li {
+            background-color: #fb7fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        table#estilo-tabla {
+            border: 1px solid #2a45a5;
+            width: 80%;
+            text-align: center;
+            border-collapse: collapse;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #2a45a5;
+            padding: 10px;
+        }
+
+        table#estilo-tabla tr:nth-child(even) {
+            background-color: #7cc2ff;
+        }
+
+        table#estilo-tabla tr:hover {
+            background-color: blueviolet;
+            color: #fff;
+        }
+
+        table#estilo-tabla th {
+            background-color: #3c0043;
+            color: #fff;
+            padding: 15px;
+        }
+
+        button {
+            background-color: #045858;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px;
+        }
+
+        button i {
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #036b6b;
+        }
+    </style>
+</head>
+<body>
+    <div class="color1 bordes">
+        Elemento 1
+    </div>
+
+    <div class="color2 bordes margenes padding">
+        <i class="fa-solid fa-eye"></i>
+        Elemento 2
+        <i class="fa-solid fa-eye"></i>
+    </div>
+
+    <div class="alineacion-texto">
+        <h1 class="text-shadow"><i class="fa-solid fa-shield-halved"></i> La Serenidad del Amanecer</h1>
+        <p>
+            El primer rayo de sol se desliza tímidamente sobre el horizonte, pintando el cielo con suaves tonos de rosa y naranja. Las aves comienzan su canto matutino, llenando el aire con una melodía dulce y tranquila. La bruma de la madrugada se disipa lentamente, revelando un paisaje que despierta con calma. En este momento de transición, todo parece posible; es un recordatorio de que cada día trae consigo una nueva oportunidad para empezar de nuevo y encontrar belleza en las cosas más simples.
+        </p>
+    </div>
+
+    <div>
+        <button> Medico <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <br>
+    <a href="https://campus.talentotechbogota.co/" class="enlace" target="_blank">TalentoTech</a>
+
+    <div>
+        <h1> Lista </h1>
+        <ul>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>Pescado</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Tabla</h1>
+        <table id="estilo-tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Correo</th>
+            </tr>
+
+            <tr>
+                <td>Juan</td>
+                <td>Cali</td>
+                <td>juan@correo.com</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Cúcuta</td>
+                <td>luis@correo.com</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

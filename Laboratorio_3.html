@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+</body>
+<script>
+
+    // // Ejercicio 1: Verificar si un número es positivo, negativo o cero
+
+    var signo = ""
+    var num = parseFloat(prompt("Ingresa un número y se le indicará si es positivo, negativo o cero"))
+
+    if (num<0)
+    {
+        signo = "El número ingresado es negativo"
+    }
+    else if (num>0)
+    {
+        signo= "El número ingresado es positivo"
+    }
+    else if (num==0)
+    {
+        signo= "El número ingresado es 0"    
+    }
+    else 
+    {
+        signo= "Error, carácter no valído"
+    }
+    document.write(signo+"<br>")
+
+
+
+    // // Ejercicio 2: Determinar si un número es par o impar
+
+    var num = parseFloat(prompt("Ingresa un número y se te indicará si es par o impar"))
+    parImpar = num%2
+
+
+    if (isNaN(num)) 
+    {
+        document.write("El valor ingresado no es un carácter válido"+"<br>");
+    }
+    else if (parImpar == 0)
+    {
+        document.write("El número es par"+"<br>")
+    }
+    else 
+    {
+        document.write("El número es impar"+"<br>")
+    }
+
+
+    // // Ejercicio 3: Validar la edad para votar
+   
+    var edad = parseInt(prompt("Ingrese su edad"))
+
+    if ( edad >= 18 )
+    {
+        document.write("Usted es mayor de edad, puede votar"+"<br>")
+    }
+    else if( edad<18 )
+    {
+        document.write("Usted es menor de edad, no puede votar"+"<br>")
+    }
+    else
+    {
+        document-write("Carácter ingresado no válido"+"<br>")
+    }
+
+
+    // //Ejercicio 4: Determinar el mayor de dos números
+   
+    var result = ""
+    var num1 = parseFloat(prompt("Ingrese un número"))
+    var num2 = parseFloat(prompt("Ingrese otro número para indicarle cúal de los dos es mayor"))
+    
+    if (num1<num2)
+    {
+        result = "El número mayor es: "+num2
+        
+    }
+    else if (num1>num2)
+    {
+        result = "El numero mayor es: "+num1
+    }
+    else if (num1==num2)
+    {
+       result = "Los números son iguales"
+    }
+    else
+    {
+        result = "Carácter no válido"
+    }
+
+    document.write(result+"<br>")
+    
+
+    // Ejercicio 5: calcular descuento en una compra
+
+    var monto = prompt ("Ingrese el monto de compra")
+    var descu = monto * 10/100
+    var montofinal = 0
+
+    if (monto>100)
+    {
+        montofinal = monto - descu
+    }
+    else if (monto<=100)
+    {
+        montofinal = monto
+    }
+    else
+    {
+        document.write("Error, carácter no válido")
+        montofinal=0
+    }
+
+    if (montofinal!=0)
+    {
+        document.write("El precio final del producto es: "+montofinal) 
+    }
+
+
+
+    // Ejercicio 6: Convertir un número a un dia de la semana (Switch)
+
+    var numDia = parseInt(prompt("Elije el número de día"))
+    var nombreDia=""
+
+    switch(numDia)
+    {
+        case 1:
+            nombreDia="Lunes"
+            break;
+
+            case 2:
+                nombreDia="Martes"
+                break;
+
+                case 3:
+                    nombreDia="Miercoles"
+                    break;
+
+                    case 4:
+                        nombreDia= "Jueves"
+                        break;
+                        
+                        case 5:
+                            nombreDia= "Viernes"
+                            break;
+
+                            case 6:
+                                nombreDia = "Sábado"
+                                break;
+
+                                case 7:
+                                    nombreDia = "Domingo"
+                                    break;
+                                    
+                                    default:
+                                        document.write("Número de día no válido");
+                                        break;
+    }
+    
+    document.write("El día correspondiente al número es: " + nombreDia);
+
+
+    // Ejercicio 7: Determinar la estación del año según el mes [Swtich]
+
+    var estacion = "";
+    var mes = parseInt(prompt("Ingrese el número del mes"));
+
+    switch (mes) 
+    {
+        case 12:
+        case 1:
+        case 2:
+            estacion = "Invierno";
+            break;
+            case 3:
+            case 4:
+            case 5:
+                estacion = "Primavera";
+                break;
+                case 6:
+                case 7:
+                case 8:
+                    estacion = "Verano";
+                    break;
+                    case 9:
+                    case 10:
+                    case 11:
+                        estacion = "Otoño";
+                        break;
+                        default:
+                            estacion = "Mes inválido";
+                            break;    
+    }
+
+
+    document.write("La estación correspondiente al mes es: " + estacion);
+
+</script>
+</html>
